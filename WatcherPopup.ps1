@@ -2,7 +2,8 @@
 
 $watcher = New-Object System.IO.FileSystemWatcher
 $watcher.IncludeSubdirectories = $true
-$watcher.Path = 'C:\Users\Skylar\Desktop\testing'
+# Must fill in path you want to monitor
+$watcher.Path = 'C:\Path\To\Monitor'
 $watcher.EnableRaisingEvents = $true
 
 $action = { 
